@@ -416,7 +416,7 @@
 
     <!-- Whether device supports variable refresh rate -->
     <bool name="config_hasVariableRefreshRate">true</bool>
-    <integer name="config_defaultVariableRefreshRateSetting">2</integer>
+    <integer name="config_defaultVariableRefreshRateSetting">3</integer>
 
     <!-- Whether device supports sensor based doze customizations -->
     <bool name="config_dozePulsePickup">true</bool>
@@ -452,6 +452,6 @@
     </integer-array>
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">90</integer>
+    <integer name="config_defaultRefreshRateInZone">120</integer>
 
 </resources>
