@@ -28,6 +28,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# AOSiP Device Settings
+PRODUCT_PACKAGES += \
+	 DeviceSettings
+
 PRODUCT_PACKAGES += \
     OnePlusIconShapeCircleOverlay \
     OnePlusIconShapeRoundedRectOverlay \
@@ -85,6 +89,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
 
+PRODUCT_PACKAGES += oneplus-mock
+PRODUCT_BOOT_JARS += oneplus-mock
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti
@@ -103,6 +110,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+	 init.opcamera.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
